@@ -14,7 +14,13 @@
         setup(props, {emit} ) {
             
             useKeydown([
-                { key: 'Escape', fn: () => { emit('closeModal') }}
+                { key: 'Escape', fn: () => { emit('closeModal') }},
+                { key: 'e', fn: () => { emit('toggleArchive') }},
+                { key: 'r', fn: () => { emit('toggleRead') }},
+                { key: 'k', fn: () => { emit('goNewer') }},
+                { key: 'j', fn: () => { emit('goOlder') }},
+                { key: '[', fn: () => { emit('goNewerAndArchive') }},
+                { key: ']', fn: () => { emit('goOlderAndArchive') }}
             ]) 
 
             return {
