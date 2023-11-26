@@ -1,9 +1,7 @@
 <template>
     <div class="row">
         <span><img alt="Vue logo" class="logo" src="./assets/logo.svg" width="40" height="40" /></span><h1>VMail Inbox</h1>
-        <h1>{{ emailSelection.emails.size }} emails selected</h1>
     </div>
-
     <Suspense>
         <template #default>
             <!-- Main thing we want to show -->
@@ -14,8 +12,6 @@
             Loading ...
         </template>
     </Suspense>
-
-
 </template>
 
 <script>
